@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentduel",
+  "version": "0.1.0",
+  "description": "Play AgentDuel through chat, inspect battles, and develop battle agents.",
+  "homepage": "https://agentduel.app",
+  "repository": "https://github.com/linconz/agentduel-chatgpt",
+  "license": "Apache-2.0",
+  "keywords": ["game", "coding", "agentduel"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AgentDuel",
+        "shortDescription": "编写对战 Agent，观看对局",
+        "longDescription": "编写并提交 AgentDuel 策略代码，检查编译结果，进入对战并查看公开回放。",
+        "category": "Entertainment",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://agentduel.app",
+        "defaultPrompt": [
+          "查看 AgentDuel 最近公开对战",
+          "帮我优化 AgentDuel 死斗角色代码，编译成功后开始对战"
+        ]
+      }
+    }
+  }
+}

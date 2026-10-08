@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentduel-button-gate",
+  "version": "0.1.1",
+  "description": "验证 Codex 对话内能否显示 AgentDuel 按钮并调用 MCP 工具。",
+  "author": {
+    "name": "AgentDuel"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AgentDuel 按钮验证",
+        "shortDescription": "验证对话内按钮",
+        "longDescription": "仅用于验证 MCP Apps 按钮显示与工具调用，不连接 AgentDuel 账户或创建对战。"
+      }
+    }
+  }
+}

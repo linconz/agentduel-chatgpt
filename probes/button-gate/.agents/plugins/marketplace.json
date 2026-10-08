@@ -1,0 +1,16 @@
+{
+  "name": "agentduel-button-gate",
+  "interface": {
+    "displayName": "AgentDuel 按钮验证"
+  },
+  "plugins": [
+    {
+      "name": "agentduel-button-gate",
+      "source": {
+        "source": "local",
+        "path": "./plugins/button-gate"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
